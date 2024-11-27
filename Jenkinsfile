@@ -4,7 +4,6 @@ pipeline {
       stage('build') {
         steps {
           script {
-            bat "docker login"
             bat "docker build -t exam ."
             bat "docker run -d -p 3000:3000 exam:latest"
           }
