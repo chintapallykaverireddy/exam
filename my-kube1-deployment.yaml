@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
         - name: my-kube1-container
-          image: shiv4j/w9-dh-app:latest  # Your Docker image
+          image: chintapallykaverireddy/exam:latest  # Your Docker image
           ports:
-            - containerPort: 3001  # The port where the Node.js app is listening
+            - containerPort: 3000  # The port where the Node.js app is listening
           resources:
             limits:
               memory: "512Mi"
